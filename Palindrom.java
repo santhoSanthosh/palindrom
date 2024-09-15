@@ -20,7 +20,7 @@ public class CollectToMapExample {
 		} else {
 			int exist = data.length;
 			int checkChar = data.length - exist;
-			while (checkChar <= data.length) {
+			while (exist != 0) {
 				for (int i = 0; i <= data.length; i++) {
 					if (i + checkChar <= data.length) {
 						if (findPalindrom(input.substring(i, checkChar + i))) {
